@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Workflow dispatcher 변수 확인
-        run : echo "environment -> ${{ github.event.inputs.environment }} version -> ${{ github.event.inputs.version }}
+        run : echo "environment -> ${{ github.event.inputs.environment }} version -> ${{ github.event.inputs.version }}"
 
       - name: Check out code
         uses: actions/checkout@v4
