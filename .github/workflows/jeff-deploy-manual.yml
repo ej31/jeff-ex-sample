@@ -61,7 +61,8 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i key.pem $USER@$HOST "docker pull ghcr.io/${{ github.repository_owner }}/jeff-sample-ex:latest"
 
           # 새로운 컨테이너 실행 (포트 매핑)
-          ssh -o StrictHostKeyChecking=no -i key.pem $USER@$HOST "docker run -d --name jeff-sample-ex -p 3000:3000 ghcr.io/${{ github.repository_owner }}/jeff-sample-ex:latest"
+          ssh -o StrictHostKeyChecking=no -i key.pem $USER@$HOST "docker stop jeff-sample-ex"
+          ssh -o StrictHostKeyChecking=no -i key.pem $USER@$HOST "docker run  --rm -d --name jeff-sample-ex -p 3000:3000 ghcr.io/${{ github.repository_owner }}/jeff-sample-ex:latest"
 
 
 
