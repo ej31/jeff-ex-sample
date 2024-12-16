@@ -10,7 +10,7 @@ const gw = (req, res, next) => {
 
 app.use(gw)
 app.get('/', (req, res) => {
-  res.send('헬로 월드🌸 after PR!');
+  res.send('헬로 월드🌸 수업중에 버전을 올렸습니다.!');
 });
 
 app.listen(PORT, () => {
