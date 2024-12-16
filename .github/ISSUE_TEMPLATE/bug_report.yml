@@ -1,4 +1,4 @@
-name: Bug Report
+name: 인터렉션 방식 버그 리포팅
 description: 인터렉션 방식
 title: "[Bug]: "
 labels: ["bug", "triage"]
